@@ -1,7 +1,5 @@
 package com.boryans.validate
 
-import kotlin.jvm.Throws
-
 
 fun String?.isValidEmail(): Boolean {
   this ?: throw NothingToValidateException("Validation is not possible on null value")
