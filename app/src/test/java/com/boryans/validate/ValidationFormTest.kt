@@ -76,6 +76,32 @@ class ValidationFormTest {
   }
 
   @Test
+  fun `return false if password validation with special character and without mixed case values set`() {
+    //Given
+    val password = "menge2utebershenge"
+    //When
+    val isValidated = password.isValidPassword(
+      shouldIncludeSpecialChar = true,
+      shouldIncludeMixedCase = false
+    )
+    //Then
+    assertFalse(isValidated)
+  }
+
+  @Test
+  fun `return true if password validation with special character and without mixed case values set`() {
+    //Given
+    val password = "aaaaaa!@aaa123aaa"
+    //When
+    val isValidated = password.isValidPassword(
+      shouldIncludeSpecialChar = true,
+      shouldIncludeMixedCase = false
+    )
+    //Then
+    assertTrue(isValidated)
+  }
+
+  @Test
   fun `return false if passwords is less than default minimum length of 8 chars`() {
     //Given
     val password = "@#123Ab"
