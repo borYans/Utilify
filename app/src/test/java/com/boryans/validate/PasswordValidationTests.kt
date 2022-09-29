@@ -4,7 +4,7 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
-class ValidationFormTest {
+class PasswordValidationTests {
 
   @Test
   fun `return true if password validation has default values set`() {
