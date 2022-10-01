@@ -1,4 +1,4 @@
-package com.boryans.validate
+package com.boryans.utilify
 
 import org.junit.Test
 

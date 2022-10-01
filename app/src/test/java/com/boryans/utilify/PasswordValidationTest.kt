@@ -1,10 +1,21 @@
-package com.boryans.validate
+package com.boryans.utilify
 
+import com.boryans.utilify.validation.isValidPassword
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
-class ValidationFormTest {
+class PasswordValidationTest {
+
+  @Test
+  fun `return false if password is blank`() {
+    //Given
+    val password = "   "
+    //When
+    val isValidated = password.isValidPassword()
+    //Then
+    assertFalse(isValidated)
+  }
 
   @Test
   fun `return true if password validation has default values set`() {
