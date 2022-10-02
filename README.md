@@ -10,7 +10,7 @@ Add the following dependency to your app build.gradle file:
 ```groovy
 dependencies {
 
-  implementation 'com.github.borYans:Utilify:1.1'
+  implementation 'com.github.borYans:Utilify:1.1.1'
   
 }
 ```
