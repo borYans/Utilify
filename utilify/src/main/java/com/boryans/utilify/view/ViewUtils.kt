@@ -1,6 +1,5 @@
 package com.boryans.utilify.view
 
-import android.content.DialogInterface
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
